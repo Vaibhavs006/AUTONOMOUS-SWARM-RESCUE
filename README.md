@@ -262,8 +262,6 @@ MIT License - see [LICENSE](LICENSE) file for details.
 **Project Lead:** [Vaibhav S]
 - Email: [vaibhavvs@gmail.com]
 ---
-
-## 🙏 Acknowledgments
 - Inspired by swarm robotics research
 - Built with Streamlit and Plotly
 
@@ -271,5 +269,3 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 *Made with ❤️ for autonomous robotics*
 ```
-
-This version is concise, covers all important aspects, and is perfect for both documentation and viva preparation. Just copy and paste! 🚀
