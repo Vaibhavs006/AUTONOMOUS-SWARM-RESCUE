@@ -230,35 +230,6 @@ When agent loses connection:
 | Detecting exploration completion | Sliding window convergence detection |
 
 ---
-
-## 🎓 Viva Preparation
-
-### Key Questions & Answers
-
-**Q1: What problem does this system solve?**
-*A: Autonomous exploration in unknown environments where communication with base can be lost. The system ensures agents can always find their way back using backtracking.*
-
-**Q2: Why use a swarm instead of single robot?**
-*A: Parallelism (faster exploration), redundancy (fail-safe), coverage (spread out), and robustness (graceful degradation).*
-
-**Q3: Explain the backtracking mechanism.**
-*A: Each agent maintains a stack of visited positions. When connection is lost, it pops positions from the stack, retracing its exact path back to base - like a breadcrumb trail.*
-
-**Q4: How does convergence detection work?**
-*A: Uses a sliding window of 30 ticks. If coverage change over this window is <0.5%, the system is converged (exploration complete).*
-
-**Q5: What design patterns are used?**
-*A: Singleton (SystemConfig), Factory (SwarmController), Observer (EventLogger), State (Agent states), Immutable Objects.*
-
-**Q6: What are the limitations?**
-*A: No obstacle avoidance, rule-based (no ML), grid-based (doesn't scale well), agents don't share information, static environment.*
-
-**Q7: Time complexity?**
-*A: O(n) where n = number of agents. Each agent operation is O(1) - constant time.*
-
-**Q8: How do you calculate path efficiency?**
-*A: (Unique tiles discovered / Total steps taken) × 100%. Higher means more productive steps.*
-
 ### Important Terminology
 - **Frontier-based Exploration**: Prioritizing unexplored areas
 - **State Machine**: Finite states with defined transitions
@@ -288,19 +259,11 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ## 📧 Contact
 
-**Project Lead:** [Your Name]
-- Email: [your.email@example.com]
-- GitHub: [Your GitHub URL]
-
-**Project Links:**
-- Repository: [GitHub Repo URL]
-- Live Demo: [Streamlit Cloud URL]
-
+**Project Lead:** [Vaibhav S]
+- Email: [vaibhavvs@gmail.com]
 ---
 
 ## 🙏 Acknowledgments
-
-- Thanks to [Mentor/Professor Name] for guidance
 - Inspired by swarm robotics research
 - Built with Streamlit and Plotly
 
